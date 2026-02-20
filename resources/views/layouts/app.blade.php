@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', config('app.name'))</title>
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,600,700&display=swap" rel="stylesheet" />
     <style>
+        @import url('https://fonts.bunny.net/css?family=figtree:400,600,700&display=swap');
         * { box-sizing: border-box; }
         body { font-family: 'Figtree', sans-serif; margin: 0; min-height: 100vh; background: #f8fafc; color: #1e293b; }
         .container { max-width: 960px; margin: 0 auto; padding: 0 1rem; }
