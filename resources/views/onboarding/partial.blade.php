@@ -121,7 +121,9 @@ $steps = [
     }
 
     document.getElementById('onboarding-close').addEventListener('click', function() {
-        complete(true);
+        if (confirm('Are you sure you want to exit the onboarding? Your answers will not be saved.')) {
+            complete(true);
+        }
     });
 
     document.getElementById('onboarding-next').addEventListener('click', function() {
