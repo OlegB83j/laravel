@@ -111,6 +111,11 @@
         </div>
     </nav>
     @endauth
+    @auth
+        @if(!auth()->user()->onboarding_completed_at)
+            @include('onboarding.partial')
+        @endif
+    @endauth
     <main>
         <div class="container">
             @if(session('status'))

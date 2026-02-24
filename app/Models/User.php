@@ -24,6 +24,8 @@ class User extends Authenticatable
         'phone',
         'is_active',
         'job_title',
+        'onboarding_completed_at',
+        'onboarding_answers',
     ];
 
     /**
@@ -47,6 +49,8 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
             'is_active' => 'boolean',
+            'onboarding_completed_at' => 'datetime',
+            'onboarding_answers' => 'array',
         ];
     }
 }
